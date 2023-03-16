@@ -89,6 +89,16 @@ button {
     height: 21px;
 }
 
+
+.header-menu {
+    display: none;
+}
+
+.header-soc-list {
+    display: none;
+}
+
+
 .header-mobile-menu-open {
     background-color: transparent;
     border: none;
@@ -99,15 +109,16 @@ button {
     height: 28px;
 }
 
-@media screen and (max-width: 1199px) {
-    .header-menu {
-            display: none;
-        }
-    
-        .header-soc-list {
-            display: none;
-        }
+.header-mobile-menu-open-icon {
+    width: 28px;
+    height: 28px;
 }
+
+.header-mobile-menu-close-icon {
+    width: 28px;
+    height: 28px;
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -117,10 +128,15 @@ button {
         }
 
 
-    .header-mobile-menu-open {
+    .header-mobile-menu-open-icon {
             width: 32px;
             height: 32px;
         }
+
+    .header-mobile-menu-close-icon {
+        width: 32px;
+        height: 32px;
+    }
     
 }
 
@@ -134,6 +150,10 @@ button {
     }
     
     .header-mobile-menu-open {
+        display: none;
+    }
+
+    .header-mobile-menu {
         display: none;
     }
 
