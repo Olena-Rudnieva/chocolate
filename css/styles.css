@@ -112,10 +112,10 @@ button {
 
 .header-mobile-menu {
     position: fixed;
-    width: 100%;
+    width: 60%;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -146,7 +146,7 @@ button {
     width: 28px;
     height: 28px;
     background: transparent;
-    border-radius: 50%;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +166,7 @@ button {
 .header-mobile-menu-close-icon {
     width: 100%;
     height: 100%;
-    fill: #FFFFFF;
+    stroke: #FFFFFF;
 }
 
 .header-mobile-menu-list {
