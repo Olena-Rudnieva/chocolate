@@ -75,8 +75,7 @@ button {
     text-transform: uppercase;
     letter-spacing: -0.03em;
     color: #111111;
-    margin-right: 4px;
-        
+    margin-right: 4px;        
 }
 
 .header-logo-style {
@@ -130,5 +129,30 @@ button {
     
     .header-mobile-menu-open {
         display: none;
+    }
+
+    .header-logo-link {
+        font-size: 18px;
+        line-height: 1.11;        
+    }
+
+    .header-menu {
+        display: flex;
+        align-items: center;
+        margin-left: 188px;
+        margin-right: 137px;
+    }
+
+    .header-menu-item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;      
+        letter-spacing: -0.02em;    
+        color: #111111;
+    }
+
+    .header-soc-link-icon {
+        width: 24px;
+        height: 24px;
     }
 }
