@@ -56,15 +56,64 @@ button {
 
 /* Header */
 
+.header {
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .header-logo-link {
+    display: inline-block;   
     font-weight: 700;
-    font-size: 18px;
-    line-height: 1.11;
+    font-size: 14px;
+    line-height: 1.29;
     text-transform: uppercase;
     letter-spacing: -0.03em;
     color: #111111;
+    margin-right: 4px;
+    
+    
 }
 
 .header-logo-style {
     font-style: italic;
+}
+
+.header-logo-chocolate-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.header-mobile-menu-open {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    stroke: #111111;
+    width: 28px;
+    height: 28px;
+}
+
+@media screen and (max-width: 1199px) {
+    .header-menu {
+            display: none;
+        }
+    
+        .header-soc-list {
+            display: none;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .header-mobile-menu-open {
+            width: 32px;
+            height: 32px;
+        }
+    
 }
