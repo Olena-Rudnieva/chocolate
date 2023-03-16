@@ -9,6 +9,7 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 
 
 </head>
@@ -16,7 +17,10 @@
     <header class="header">
   <div class="container">
     <nav class="header-nav">
-          <a class="header-logo-link link" href="./index.html"> <span header-logo-style="">SIMPLY </span>CHOCOLATE
+          <a class="header-logo-link link" href="./index.html"> <span class="header-logo-style">SIMPLY </span>CHOCOLATE
+            <svg>
+                <use href="./images/sprite.svg#icon-header-logo-chocolate"></use>
+            </svg>
           </a>
 
           <ul class="header-menu list">
@@ -36,7 +40,32 @@
               <a class="header-menu-link link" href>Chocolate is loved</a>
             </li>
           </ul>
-        </nav>    
+        </nav>  
+
+        <button class="header-mobile-menu-open js-open-menu" type="button">
+          <svg class="header-mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        
+        <ul class="header-soc-list list">
+            <li class="header-soc-list-item">
+                <a class="header-soc-link link" href="#">
+                    <svg>
+                        <use></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="header-soc-list-item">
+                <a class="header-soc-link link" href="#">
+                    <svg>
+                        <use></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        
+        
   </div>
 </header>
     

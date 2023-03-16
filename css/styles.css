@@ -53,3 +53,18 @@ button {
         padding-right: 15px;
     }
 }
+
+/* Header */
+
+.header-logo-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    color: #111111;
+}
+
+.header-logo-style {
+    font-style: italic;
+}
