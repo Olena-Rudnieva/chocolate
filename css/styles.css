@@ -69,7 +69,6 @@ button {
 }
 
 .header-logo-link {
-    display: inline-block;   
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
@@ -77,8 +76,7 @@ button {
     letter-spacing: -0.03em;
     color: #111111;
     margin-right: 4px;
-    
-    
+        
 }
 
 .header-logo-style {
@@ -111,9 +109,26 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+
+    .header {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+
     .header-mobile-menu-open {
             width: 32px;
             height: 32px;
         }
     
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        padding-bottom: 32px;
+    }
+    
+    .header-mobile-menu-open {
+        display: none;
+    }
 }
