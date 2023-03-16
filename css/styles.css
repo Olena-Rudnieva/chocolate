@@ -76,7 +76,7 @@ button {
     text-transform: uppercase;
     letter-spacing: -0.03em;
     color: #111111;
-
+    
            
 }
 
@@ -137,21 +137,25 @@ button {
         display: none;
     }
 
+    .header-nav {
+        display: flex;
+    }
+
     .header-logo-link {
         font-size: 18px;
         line-height: 1.11;   
-        /* margin-right: 188px;      */
+        margin-right: 188px;     
     }
 
     .header-menu {
         display: inline-flex;
         align-items: center;
         gap: 24px;
-        /* margin-right: 137px; */
+       
         
     }
 
-    .header-menu-item {
+    .header-menu-link {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;      
@@ -161,6 +165,8 @@ button {
 
     .header-soc-list {
         display: flex;
+        gap: 18px;
+        margin-left: auto;
     }
 
     .header-soc-link-icon {
