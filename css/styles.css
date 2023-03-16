@@ -137,10 +137,10 @@ button {
     }
 
     .header-menu {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        margin-left: 188px;
-        margin-right: 137px;
+        gap: 24px;
+        
     }
 
     .header-menu-item {
@@ -149,6 +149,10 @@ button {
         line-height: 1.14;      
         letter-spacing: -0.02em;    
         color: #111111;
+    }
+
+    .header-soc-list {
+        display: flex;
     }
 
     .header-soc-link-icon {
