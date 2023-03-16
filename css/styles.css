@@ -48,9 +48,7 @@ button {
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1166px;
-        padding-left: 15px;
-        padding-right: 15px;
+        max-width: 1166px;        
     }
 }
 
@@ -69,13 +67,17 @@ button {
 }
 
 .header-logo-link {
+    display: flex;
+    gap: 4px;
+    align-items: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
     text-transform: uppercase;
     letter-spacing: -0.03em;
     color: #111111;
-    margin-right: 4px;        
+
+           
 }
 
 .header-logo-style {
@@ -126,6 +128,10 @@ button {
     .header {
         padding-bottom: 32px;
     }
+
+    .header-container {
+        justify-content: start;
+    }
     
     .header-mobile-menu-open {
         display: none;
@@ -133,13 +139,15 @@ button {
 
     .header-logo-link {
         font-size: 18px;
-        line-height: 1.11;        
+        line-height: 1.11;   
+        /* margin-right: 188px;      */
     }
 
     .header-menu {
         display: inline-flex;
         align-items: center;
         gap: 24px;
+        /* margin-right: 137px; */
         
     }
 
@@ -158,5 +166,7 @@ button {
     .header-soc-link-icon {
         width: 24px;
         height: 24px;
+        gap: 18px;        
+        
     }
 }
