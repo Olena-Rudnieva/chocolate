@@ -33,7 +33,7 @@ button {
 }
 
 .container {
-    max-width: 365px;
+    max-width: 375px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -42,13 +42,13 @@ button {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 734px;
+        max-width: 768px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1166px;        
+        max-width: 1200px;        
     }
 }
 
@@ -159,7 +159,7 @@ button {
 }
 
 .header-mobile-menu-close:hover .header-mobile-menu-close-icon,
-   .header-mobile-menu-close:focus .header-mobile-menu-close-icon {
+.header-mobile-menu-close:focus .header-mobile-menu-close-icon {
     stroke: #FD9222;
 }
 
@@ -179,7 +179,7 @@ button {
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #FFFFFF;
-    transition: color 250ms linear;
+    transition: color 300ms linear;
 }
 
 .header-mobile-menu-link:hover,
@@ -218,6 +218,11 @@ button {
 
 }
 
+@media screen and (min-width: 366px) {   
+    .header-mobile-menu {
+            width: 220px;
+        }
+}
 
 @media screen and (min-width: 768px) {
 
@@ -231,6 +236,10 @@ button {
             width: 32px;
             height: 32px;
         }
+
+    .header-mobile-menu {    
+        width: 290px;        
+    }
 
     .header-mobile-menu-close-icon {
         width: 32px;
