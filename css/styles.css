@@ -149,23 +149,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 250ms linear;
 }
-
-/* .header-mobile-menu-close:hover,
-.header-mobile-menu-close:focus {
-    background-color: #FCF1E0;
-} */
-
-/* .header-mobile-menu-close:hover .header-mobile-menu-close-icon,
-.header-mobile-menu-close:focus .header-mobile-menu-close-icon {
-    fill: linear-gradient(#F16529, #D44528) ;
-} */
 
 .header-mobile-menu-close-icon {
     width: 28px;
     height: 28px;
     stroke: #FFFFFF;
+    transition: stroke 250ms linear;
 }
 
 .header-mobile-menu-close:hover .header-mobile-menu-close-icon,
@@ -190,6 +180,11 @@ button {
     letter-spacing: -0.02em;
     color: #FFFFFF;
     transition: color 250ms linear;
+}
+
+.header-mobile-menu-link:hover,
+.header-mobile-menu-link:focus {
+    color: #FD9222;
 }
 
 .header-mobile-soc-list {
