@@ -222,6 +222,11 @@ button {
     .header-mobile-menu {
             width: 220px;
         }
+
+    .header-mobile-menu-close {
+        right: 0vmax;
+        
+    }
 }
 
 @media screen and (min-width: 768px) {
