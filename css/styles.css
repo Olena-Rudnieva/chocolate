@@ -436,3 +436,41 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         background-image: url(../images/hero/mobile-hero-bg@2x.jpg);
     }
 }
+
+
+@media screen and (min-width: 768px) {
+    .hero {
+            padding-bottom: 50px;
+        }
+
+    .hero-wrap {
+        padding: 671px 40px 40px 40px;
+        background-image: url(../images/hero/tablet-hero-bg.jpg);        
+    }
+
+    .hero-title {
+        font-size: 28px;
+        line-height: 1.21;
+        width: 461px;
+    }
+
+    .button-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .scroll-text {
+        font-size: 14px;
+        line-height: 1.29;        
+    }
+
+    .second-button {
+        margin-bottom: 0;
+    }
+
+    .scroll-wrap {
+        margin-left: auto;
+    }
+    
+}
+
