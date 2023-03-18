@@ -42,13 +42,13 @@ button {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 734px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1200px;        
+        max-width: 1166px;        
     }
 }
 
@@ -120,7 +120,7 @@ button {
     pointer-events: none;
     background-color: #1E1823;
     transform: translate(100%, 0);
-    transition: opacity 300ms linear, visibility 300ms linear, transform 300ms linear 300ms;
+    transition: opacity 300ms linear 500ms, visibility 300ms linear 500ms, transform 300ms linear 500ms;
 }
 
 .header-mobile-menu.is-open {
