@@ -1,3 +1,8 @@
+:root {
+    --primary-font: "Montserrat", sans-serif;
+}
+
+
 h1,
 h2,
 h3,
@@ -32,6 +37,10 @@ button {
     text-decoration: none;
 }
 
+body {
+    font-family: var(--primary-font);
+}
+
 .container {
     max-width: 375px;
     padding-left: 15px;
@@ -51,6 +60,25 @@ button {
         max-width: 1166px;        
     }
 }
+
+/* Components */
+
+.modal-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    background-color: var(--button-color);
+    color: var(--secondary-text-color-theme-dark);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* /Components */
 
 /* Header */
 
@@ -319,7 +347,40 @@ button {
 
     .header-soc-link {        
         color: #111111;        
-    }
+    }    
+}
 
+/* HERO */
+
+/* .hero {
+    padding-bottom: 72px;
+} */
+
+.hero-wrap {
+    padding: 395px 20px 20px 20px;
+    padding-bottom: 72px;
+    background-image: url(../images/hero/mobile-hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.hero-title {
     
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.20;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    width: 290px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .hero-wrap {
+        background-image: url(../images/hero/mobile-hero-bg@2x.jpg);
+    }
 }
