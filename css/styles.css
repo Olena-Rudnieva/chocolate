@@ -395,6 +395,40 @@ body {
     margin-bottom: 32px;
 }
 
+.scroll-wrap {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 18px;
+}
+
+.scroll-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    color: var(--secondary-text-color);
+}
+
+.scroll-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    color: var(--accent-color);
+    background-color: var(--decoration-color);
+    transition: background-color 250ms linear;
+}
+
+.scroll-btn-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
