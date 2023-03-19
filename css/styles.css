@@ -554,13 +554,13 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
 }
 
-.modal-form-close-btn:hover,
-.modal-form-close-btn:focus {
+.modal-thank-close-btn:hover,
+.modal-thank-close-btn:focus {
     background-color: #FFFFFF;
 }
 
-.modal-form-close-btn:hover .modal-close-icon,
-.modal-form-close-btn:focus .modal-close-icon {
+.modal-thank-close-btn:hover .modal-close-icon,
+.modal-thank-close-btn:focus .modal-close-icon {
     fill: #FD9222;
 }
 
