@@ -753,9 +753,10 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         line-height: 1.17;
     }
 
-    .modal-thank-text {
+    .modal-thank-review-text {
         font-size: 18px;
         line-height: 1.33;
+        width: auto;
     }
 }
 
