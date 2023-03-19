@@ -125,7 +125,7 @@
                 to our finest ingredients for a moment of pure delight!</h1>
             
                 <div class="button-wrap">
-                    <button class="modal-btn" type="button">
+                    <button class="modal-btn" data-modal-open type="button">
                         Buy now
                     </button>
                     
@@ -306,17 +306,17 @@
     </div>
 </footer>
 
-<!-- Modal form Thank you for order -->
+<!-- Modal form Thank you! -->
 
-<div class="modal-order-backdrop is-hidden" data-modal>
-    <div class="modal-order">
-        <button class="modal-order-form-close-btn" data-modal-close type="button">
-          <svg class="modal-order-close-icon">
-            <use href="./images/sprite.svg#icon-close"></use>
+<div class="modal-thank-backdrop is-hidden" data-modal>
+    <div class="modal-thank">
+        <button class="modal-thank-form-close-btn" data-modal-close type="button">
+          <svg class="modal-thank-close-icon">
+            <use href="./images/sprite.svg#icon-modal-thank-close"></use>
           </svg>
         </button>
-        <b class="modal-order-title">thank you!</b>
-        <p>We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.</p>
+        <b class="modal-thank-title">THANK YOU!</b>
+        <p class="modal-thank-text">We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.</p>
 
     </div>
 
@@ -324,5 +324,6 @@
 
 
   <script src="./js/mobile-menu.js"></script> 
+  <script src="./js/modal.js"></script>
 </body>
 </html>
