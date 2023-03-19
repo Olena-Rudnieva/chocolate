@@ -290,6 +290,14 @@ body {
         height: 32px;
     }
 
+    .header-mobile-menu-container {
+        padding: 156px 81px 24px 32px;
+    }
+
+    .header-mobile-menu-list {
+        margin-left: 53px;
+    }
+
     .header-soc-list-item {
         width: 24px;
         height: 24px;
