@@ -491,7 +491,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
 /* Modal form Thank you!  */
 
-.modal-thank-backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -504,13 +504,13 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         visibility 250ms linear;
 }
 
-.modal-thank-backdrop.is-hidden {
+.backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
 
-.modal-thank-backdrop.is-hidden .modal-thank {
+.backdrop.is-hidden .modal-thank {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
@@ -522,8 +522,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     width: 311px;
     height: 350px;  
     background-color: #FD9222;  
-    background-image: url(../images/modal/modal-thank.png);
-    /* background-size: cover; */
+    background-image: url(../images/modal/mobile-modal-thank.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     border-radius: 15px;
@@ -531,7 +530,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     padding: 84px 24px 170px 68px;
 }
 
-.modal-thank-form-close-btn {
+.modal-thank-close-btn {
     position: absolute;
     top: 14px;
     right: 14px;
@@ -551,7 +550,6 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     width: 16px;
     height: 16px;
     stroke: #F16529;
-
 }
 
 .modal-thank-close-btn:hover,
@@ -559,9 +557,9 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     background-color: #FFFFFF;
 }
 
-.modal-thank-close-btn:hover .modal-close-icon,
-.modal-thank-close-btn:focus .modal-close-icon {
-    fill: #FD9222;
+.modal-thank-close-btn:hover .modal-thank-close-icon,
+.modal-thank-close-btn:focus .modal-thank-close-icon {
+    stroke: #111111;
 }
 
 .modal-thank-title {
@@ -571,7 +569,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     line-height: 1.2;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #FCF1E0;;
+    color: #FCF1E0;
     margin-bottom: 8px;
 }
 
@@ -581,3 +579,54 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     letter-spacing: -0.02em;
     color: #FFFFFF;
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .modal-thank {
+        background-image: url(../images/modal/mobile-modal-thank@2x.png);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-thank {
+        width: 516px;
+        height: 414px;        
+        background-image: url(../images/modal/tablet-modal-thank.png);
+        padding: 154px 44px 154px 163px;
+    }
+
+    .modal-thank-close-btn {        
+        top: 24px;
+        right: 24px;        
+        width: 40px;
+        height: 40px;      
+    }
+
+    .modal-thank-close-icon {
+        width: 22px;
+        height: 22px;      
+    }
+    
+    .modal-thank-title {
+        font-size: 24px;
+        line-height: 1.17;        
+    }
+
+    .modal-thank-text {
+        font-size: 18px;
+        line-height: 1.33;       
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .modal-thank {
+        background-image: url(../images/modal/tablet-modal-thank@2x.png);
+    }
+}
+
+
+
+
