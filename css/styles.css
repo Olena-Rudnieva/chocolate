@@ -522,10 +522,10 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     width: 311px;
     height: 350px;  
     background-color: #FD9222;  
-    /* background-image: #FD9222, url(../images/modal/modal-thank.png);
-    background-size: cover;
+    background-image: url(../images/modal/modal-thank.png);
+    /* background-size: cover; */
     background-repeat: no-repeat;
-    background-position: center; */
+    background-position: left bottom;
     border-radius: 15px;
     transition: transform 250ms linear;
     padding: 84px 24px 170px 68px;
