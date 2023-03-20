@@ -9,6 +9,8 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
@@ -234,33 +236,35 @@
 <section class="reviews" id="reviews">
     <div class="container reviews-container">
         <h2 class="reviews-title"> <span class="reviews-title-accent">chocolate </span> is loved</h2>
-        <div class="reviews-wrap">
-            <img class="reviewer-photo"
-            srcset="./images/reviews/review1.png 1x, ./images/reviews/review1@2x.png 2x" 
-                src="./images/reviews/review1.png" 
-                alt="Photo of the reviewer"
-                width="80"
-                height="80">            
-            <h3 class="reviewer-name">Victoria Dobrzhanska</h3>
-            <p class="review-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
-        </div>
-        
-        <div class="reviews-wrap">
-            <img class="reviewer-photo"
-             src="./images/reviews/review2.png"             
-             alt="Photo of the reviewer"
-             srcset="./images/reviews/review2.png 1x, ./images/reviews/review2@2x.png 2x" width="80" height="80">            
-            <h3 class="reviewer-name">Nazar Babenko</h3>
-            <p class="review-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
-        </div>
-        
-        <div class="reviews-wrap">
-            <img class="reviewer-photo"
-             src="./images/reviews/review3.png"
-             alt="Photo of the reviewer"
-             srcset="./images/reviews/review3.png 1x, ./images/reviews/review3@2x.png 2x" width="80" height="80">            
-            <h3 class="reviewer-name">Olena Kampusch</h3>
-            <p class="review-text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+        <div class="slider-wrap">
+            <div class="reviews-wrap">
+                <img class="reviewer-photo"
+                srcset="./images/reviews/review1.png 1x, ./images/reviews/review1@2x.png 2x" 
+                    src="./images/reviews/review1.png" 
+                    alt="Photo of the reviewer"
+                    width="80"
+                    height="80">            
+                <h3 class="reviewer-name">Victoria Dobrzhanska</h3>
+                <p class="review-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+            </div>
+            
+            <div class="reviews-wrap">
+                <img class="reviewer-photo"
+                 src="./images/reviews/review2.png"             
+                 alt="Photo of the reviewer"
+                 srcset="./images/reviews/review2.png 1x, ./images/reviews/review2@2x.png 2x" width="80" height="80">            
+                <h3 class="reviewer-name">Nazar Babenko</h3>
+                <p class="review-text">This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is smooth, and the chocolate is good.</p>
+            </div>
+            
+            <div class="reviews-wrap">
+                <img class="reviewer-photo"
+                 src="./images/reviews/review3.png"
+                 alt="Photo of the reviewer"
+                 srcset="./images/reviews/review3.png 1x, ./images/reviews/review3@2x.png 2x" width="80" height="80">            
+                <h3 class="reviewer-name">Olena Kampusch</h3>
+                <p class="review-text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
+            </div>
         </div>
         <button class="modal-btn review-btn" type="button">
             Leave a review
@@ -363,8 +367,10 @@
 
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="./js/mobile-menu.js"></script> 
   <script src="./js/modal.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 </html>

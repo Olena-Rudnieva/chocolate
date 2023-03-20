@@ -561,6 +561,14 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     margin-top: 65px;
 }
 
+.slick-dots {
+
+}
+
+.slick-dots li button::before {
+    display: none;
+}
+
 
 
 /* /REVIEWS */
