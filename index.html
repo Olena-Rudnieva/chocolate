@@ -232,12 +232,19 @@
 <!-- Reviews -->
 
 <section class="reviews" id="reviews">
-    <div class="container">
-        <h2 >chocolate is loved</h2>
-        <h3>Victoria Dobrzhanska</h3>
-        <p>I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
-        <!-- slider -->
-        <button class="btn" type="button">
+    <div class="container reviews-container">
+        <h2 class="reviews-title"> <span class="reviews-title-accent">chocolate </span> is loved</h2>
+        <div class="reviews-wrap">
+            <img class="reviewer-photo"
+            srcset="./images/reviews/review1.png 1x, ./images/reviews/review1@2x.png 2x" 
+                src="./images/reviews/review1.png" 
+                alt="Photo of the reviewer"
+                width="80"
+                height="80">            
+            <h3 class="reviewer-name">Victoria Dobrzhanska</h3>
+            <p class="review-text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
+        </div>
+        <button class="modal-btn review-btn" type="button">
             Leave a review
         </button>
     </div>
@@ -323,7 +330,7 @@
 
 <!-- Modal form Thank you review! -->
 
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal-thank">
         <button class="modal-thank-close-btn" data-modal-close type="button">
           <svg class="modal-thank-close-icon">
@@ -334,7 +341,7 @@
         <p class="modal-thank-review-text">We are so happy to hear from you!</p>
 
     </div>
-</div>
+</div> -->
 
 
 
