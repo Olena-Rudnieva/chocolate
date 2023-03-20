@@ -509,12 +509,16 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #111111;
-    margin-bottom: 72px;
+    margin-bottom: 32px;
 }
 
 .reviews-title-accent {
     color: #FD9222;
     margin-right: 3px;
+}
+
+.slider-inner {
+    padding-top: 40px;
 }
 
 .reviews-wrap {
@@ -528,6 +532,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     padding: 56px 18px 42px 18px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 13px;
 }
 
 .reviewer-photo {
@@ -558,15 +563,39 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     border: 1px solid #FD9222;
     background-color: transparent;
     color: #111111;
-    margin-top: 65px;
+    margin-top: 30px;
+    
 }
 
 .slick-dots {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+.slick-dots li button {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(17, 17, 17, 0.1);
+    border-radius: 50%;
+    
 }
 
 .slick-dots li button::before {
     display: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #FD9222;
+    width: 28px;
+    height: 13px;
+    border-radius: 10px;
+    
+}
+
+.slick-dots li {
+    margin: 0 7px;
+    width: auto;
+    height: auto;
 }
 
 
