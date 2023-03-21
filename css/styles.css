@@ -834,6 +834,8 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         position: absolute;
         top: 24px;
         right: 24px;
+        width: 28px;
+        height: 28px;
     }
 
     .modal-review-title {       
@@ -891,12 +893,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
             height: 137px;
             padding-top: 22px;
             padding-right: 24px;
-        }
-
-
-
-
-    
+        }  
 }
 
 
