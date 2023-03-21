@@ -732,6 +732,11 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     flex-direction: column;
 }
 
+
+.modal-review-field {
+    position: relative;
+}
+
 .modal-review-field:not(:last-child) {
     margin-bottom: 14px;
 }
@@ -761,6 +766,51 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     font-weight: 400;
     color: rgba(64, 64, 64, 0.3);
 }
+
+.phone-input {
+    padding-left: 100px;
+}
+
+
+.phone-code {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    display: inline-flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;              
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #000000;
+    
+
+}
+
+.phone-code::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-image: url(../images/flag.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+    
+}
+
+.phone-code::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    background-color: rgba(64, 64, 64, 0.3);
+    margin-left: 8px;
+
+}
+
 
 .review-modal-message {
     resize: none;
