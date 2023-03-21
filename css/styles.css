@@ -820,8 +820,25 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 }
 
 .review-send-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+    border: transparent;
+    border-radius: 100px;
+    padding: 12px 28px;
+    transition: background-color 250ms linear, color 250ms linear;
     margin-top: 12px;
 }
+
+.review-send-btn:hover,
+.review-send-btn:focus {
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+} 
 
 @media screen and (min-width: 768px) {
     .modal-review {
@@ -861,6 +878,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         font-size: 18px;
         line-height: 1.22;  
         padding-left: 24px;
+        border-radius: 13px;
     }
 
     .phone-input {
@@ -894,6 +912,11 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
             padding-top: 22px;
             padding-right: 24px;
         }  
+
+        .review-send-btn {
+            padding: 14px 40px;
+            margin-top: 8px;
+        }
 }
 
 
