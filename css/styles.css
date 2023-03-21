@@ -778,7 +778,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 16px;
+    left: 18px;
     display: inline-flex;
     font-weight: 500;
     font-size: 14px;
@@ -786,7 +786,6 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     align-items: center;
     letter-spacing: -0.02em;
     color: #000000;  
-
 }
 
 .phone-code::before{
@@ -798,8 +797,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 8px;
-    
+    margin-right: 8px;    
 }
 
 .phone-code::after {
@@ -819,7 +817,6 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     height: 90px;
     padding-top: 14px;
     padding-right: 18px;
-
 }
 
 .review-send-btn {
@@ -860,8 +857,41 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         border: 1.5px solid rgba(17, 17, 17, 0.05);       
         font-weight: 500;
         font-size: 18px;
-        line-height: 1.22;       
+        line-height: 1.22;  
+        padding-left: 24px;
     }
+
+    .phone-input {
+        padding-left: 177px;
+    }
+
+        .phone-code::before {
+            content: "";
+            display: block;
+            width: 32px;
+            height: 24px;         
+            margin-right: 18px;
+        }
+
+        .phone-code {
+            font-size: 18px;
+            line-height: 1.22; 
+            left: 24px;
+        }
+
+        .phone-code::after {
+            content: "";
+            width: 1px;
+            height: 32px;            
+            margin-left: 32px;
+
+        }
+
+        .review-modal-message {
+            height: 137px;
+            padding-top: 22px;
+            padding-right: 24px;
+        }
 
 
 
