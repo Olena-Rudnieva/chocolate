@@ -725,6 +725,8 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 .modal-review-accent-color {
     color: #FD9222;
     font-size: 20px;    
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
 }
 
 .review-modal-form {
@@ -783,8 +785,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     line-height: 1.21;              
     align-items: center;
     letter-spacing: -0.02em;
-    color: #000000;
-    
+    color: #000000;  
 
 }
 
@@ -823,6 +824,49 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
 .review-send-btn {
     margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-review {
+        width: 517px;
+        height: 631px;
+        padding: 40px;            
+    }
+
+    .modal-review-close-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+
+    .modal-review-title {       
+        font-size: 24px;
+        line-height: 1.33;
+        width: 298px;
+        margin-bottom: 40px;
+    }
+
+    .modal-review-accent-color {
+        font-size: 24px;
+        line-height: 1.33;
+    }
+
+    .modal-review-field:not(:last-child) {
+        margin-bottom: 19px;
+    }
+
+    .review-modal-input {
+        height: 66px;
+        border: 1.5px solid rgba(17, 17, 17, 0.05);       
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;       
+    }
+
+
+
+
+    
 }
 
 
