@@ -563,8 +563,14 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     border: 1px solid #FD9222;
     background-color: transparent;
     color: #111111;
-    margin-top: 30px;
-    
+    margin-top: 30px;  
+    transition: background-color 250ms linear, color 250ms linear; 
+}
+
+.review-btn:hover,
+.review-btn:focus {
+    background-color: #FD9222;
+    color: #FFFFFF;
 }
 
 .slick-dots {
@@ -598,6 +604,42 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     height: auto;
 }
 
+@media screen and (min-width: 768px) {
+    .reviews {
+        padding-top: 100px;
+        padding-bottom: 100px;        
+    }
+
+    .reviews-title {
+        margin-bottom: 50px;
+    }
+
+    .reviews-wrap {
+        margin-bottom: 25px;
+        width: 344px;
+    }
+
+    .review-btn {
+        margin-top: 48px;
+        font-size: 18px;
+        line-height: 1.22;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .reviews {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
+    .reviews-wrap {
+        margin-bottom: 25px;
+        width: 360px;
+    }
+
+    
+}
 
 
 /* /REVIEWS */
