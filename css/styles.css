@@ -491,6 +491,8 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
 /* REVIEWS */
 
+
+
 .reviews {
     padding-top: 72px;
     padding-bottom: 72px;
@@ -641,8 +643,79 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     
 }
 
-
 /* /REVIEWS */
+
+
+
+
+/* MODAL REVIEW */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 250ms linear,
+        visibility 250ms linear;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal-review {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal-review {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 311px;
+    height: 471px;
+    background-color: E2E2E2;
+    border-radius: 15px;
+    padding: 32px 32px 32px 24px;
+    transition: transform 250ms linear;
+}
+
+.modal-review-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2; 
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 32px;
+}
+
+.modal-review-accent-color {
+    color: #FD9222;
+}
+
+.review-input-wrap {}
+
+.review-modal-input {
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.review-modal-field {}
+
+.review-modal-message {
+    margin-bottom: 18px;
+}
+
+
+/* /MODAL REVIEW */
+
+
 
 /* Modal form Thank you!  */
 
