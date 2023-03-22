@@ -150,6 +150,8 @@ body {
     position: fixed;
     width: 60%;
     height: 100%;
+    max-height: 812px;
+    overflow: scroll;
     top: 0;
     right: 0;
     z-index: 999;
@@ -277,7 +279,8 @@ body {
         }
 
     .header-mobile-menu {    
-        width: 290px;        
+        width: 290px;   
+        max-width: 1024px;     
     }
 
     .header-mobile-menu-close {
