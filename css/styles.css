@@ -538,9 +538,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 }
 
 .icon-chocolate::before {
-    background-image: url(../images/chocolate.svg);
-    
-
+    background-image: url(../images/chocolate.svg);   
 }
 
 .icon-coin::before {
@@ -560,10 +558,22 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.advantages-description:not(:last-child) {
+.advantages-position-item:not(:last-child) {
     margin-bottom: 29px;
 }
 
+@media screen and (min-width: 768px) {
+    .advantages-position {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .advantages-position-item {
+        width: 308px;
+    }
+    
+}
 
 
 /* /ADVANTAGES */
