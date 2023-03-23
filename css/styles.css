@@ -566,12 +566,46 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     .advantages-position {
         display: flex;
         flex-wrap: wrap;
-        gap: 60px;
+        row-gap: 41px;
+        column-gap: 60px;
     }
 
     .advantages-position-item {
         width: 308px;
     }
+
+    .advantages-position-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .advantages-position {
+            column-gap: 88px;
+    }
+
+    .advantages-position-item {
+            position: relative;
+    }
+
+    .advantages-position-item::after {
+        content: "";
+        width: 124px;
+        height: 0;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transform: rotate(90deg);
+        position: absolute;
+        top: 50%;
+        right: -80px;
+    }
+
+    .advantages-position-item:last-child::after {
+        display: none;
+    }
+
+
     
 }
 
