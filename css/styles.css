@@ -644,6 +644,168 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     margin-bottom: 32px;
 }
 
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 225px;    
+    perspective: 1000px; 
+}
+
+.flip-card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 15px;  
+}
+
+.flip-card-img {
+    width: 180px;
+    height: 138px;
+    margin-right: 27px;
+    margin-bottom: 25px;
+    margin-left: 35px;
+}
+
+.flip-card-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    
+}
+
+.milk-chocolate {
+    background-color: #FD9222;
+    border: 1px solid #FD9222;
+    color: #FFFFFF;
+}
+
+.milk {
+    
+    background-color: #FFFFFF;
+    border: 1px solid #FD9222;
+    color: #111111;        
+}
+
+.nuts {
+    background-color: #1E1823;
+    border: 1px solid #1E1823;
+    color: #FFFFFF;
+}
+
+.semi-sweet-chocolate {
+    background-color: #FFFFFF;
+    border: 1px solid #FD9222;
+    color: #111111;
+}
+
+.flip-card-back {
+    background-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    padding: 28px;
+    overflow: auto;
+}
+
+.flip-card-title-back {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 8px;    
+}
+
+.flip-card-link {    
+    background-color: #FD9222;
+    border-radius: 35px;
+    border: 1px solid #FD9222;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    padding: 6px 12px;  
+}
+
+.benefits {
+    background-color: transparent;
+    border: 1px solid #FD9222;
+    color: #111111;
+    margin-left: 6px;
+}
+
+.flip-card-text {
+    margin-top: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
+
+@media screen and (min-width: 375px) {
+    .flip-card {
+        width: 335px;
+        height: 270px;            
+    }
+
+    .flip-card-front {
+        padding: 28px;
+    }
+
+    .flip-card-img {
+        width: 224px;
+        height: 171px;    
+        margin-left: 28px;
+    }     
+}
+
+@media screen and (min-width: 768px) {
+    .ingredients {
+        padding-top: 100px;
+    }
+
+    .ingredients-title {
+        font-size: 24px;
+        line-height: 1.17;       
+        width: 411px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+    }
+}
+
+
 
 /* /Ingredients */
 
