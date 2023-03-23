@@ -12,7 +12,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5,ї
 h6,
 p {
     margin-top: 0;
@@ -44,10 +44,11 @@ button {
 
 body {
     font-family: var(--primary-font);
+    background-color: #E2E2E2;
 }
 
 .container {
-    max-width: 375px;
+    max-width: 365px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -603,14 +604,48 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
     .advantages-position-item:last-child::after {
         display: none;
-    }
-
-
-    
+    }   
 }
 
 
 /* /ADVANTAGES */
+
+/* Ingredients */
+
+.ingredients {
+    padding-top: 72px;
+}
+
+.ingredients-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+    width: 283px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+}
+
+.ingredients-title-accent {
+    color: #FD9222;;
+}
+
+.ingredients-text { 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #111111;
+    margin-bottom: 32px;
+}
+
+
+/* /Ingredients */
 
 /* REVIEWS */
 
@@ -770,7 +805,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
     .reviews-wrap {
         margin-bottom: 25px;
-        width: 360px;
+        
     }
 
     
