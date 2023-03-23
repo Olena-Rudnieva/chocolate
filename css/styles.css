@@ -627,7 +627,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     width: 283px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 72px;
+    margin-bottom: 24px;
 }
 
 .ingredients-title-accent {
@@ -799,10 +799,75 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         font-size: 24px;
         line-height: 1.17;       
         width: 411px;
+        margin-bottom: 28px;
+    }
+
+    .ingredients-text {
+        width: 486px;  
+        text-align: center;  
+        margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 72px;
     }
+
+    .flip-card-position {
+        display: flex;
+        flex-wrap: wrap;        
+        gap: 32px;
+    }
+
+    .flip-card {        
+        width: 336px;   
+    }
+
+    .flip-card:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1199px){
+        
+        .order-number-milk-chocolate {
+            order: 1;
+        }
+    
+        .order-number-semi-chocolate {
+            order: 2;
+        }
+    
+        .order-number-milk {
+            order: 3;
+        }
+    
+        .order-number-nuts {
+            order: 4;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .ingredients {
+        padding-top: 128px;
+    }
+
+    .flip-card-position {
+        gap: 18px;
+    }
+
+    .flip-card {
+        width: 270px;
+    }
+
+    .flip-card-front {
+        padding: 28px 36px 28px 28px;
+    }
+
+    .flip-card-img {
+        width: 206px;
+        height: 160px;
+        margin-left: 0;
+    }
+
+
 }
 
 
