@@ -1015,8 +1015,34 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     
 }
 
-
 /* /HOW MADE */
+
+/* PRODUCTS  */
+
+.products {
+    padding-bottom: 72px;
+}
+
+.products-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.products-title-accent {
+    color: #FD9222;
+    margin-bottom: 32px;
+}
+
+
+
+/* /PRODUCTS */
+
+
 
 /* REVIEWS */
 
@@ -1024,8 +1050,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
 .reviews {
     padding-top: 72px;
-    padding-bottom: 72px;
-    background: #E2E2E2;
+    padding-bottom: 72px;    
 }
 
 .reviews-container {
