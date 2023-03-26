@@ -975,9 +975,43 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
     .how-made-recipe-item {
         width: 477px;
+    }  
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .how-made {
+            padding-top: 128px;
+            padding-bottom: 128px;
     }
 
-   
+    .how-made-wrap {
+        display: flex;
+        gap: 20px;
+    }
+
+    .how-made-video {
+        width: 600px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .how-made-recipe {
+        padding: 32px 32px 94px 32px;
+        width: 516px;
+        height: 400px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .how-made-recipe-title {
+        width: 350px;
+    }
+
+    .how-made-recipe-item {
+        width: 425px;
+    }
     
 }
 
