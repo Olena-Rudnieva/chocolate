@@ -952,6 +952,32 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         line-height: 1.17;
         margin-bottom: 50px;
     }
+
+    .how-made-video {
+        width: 614px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .how-made-recipe {
+        padding: 32px;
+        width: 614px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .how-made-recipe-title {
+        margin-bottom: 28px;
+        width: 370px;        
+    }
+
+    .how-made-recipe-item {
+        width: 477px;
+    }
+
+   
     
 }
 
