@@ -44,7 +44,7 @@ button {
 
 body {
     font-family: var(--primary-font);
-    background-color: #E2E2E2;
+    background-color: #FAFAFA;
 }
 
 .container {
@@ -929,6 +929,32 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 .how-made-recipe-item:not(:last-child) {
     margin-bottom: 18px;
 }
+
+.how-made-recipe-item::before {
+    content: "";
+    display: inline-flex;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
+    margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .how-made {
+            padding-top: 100px;
+            padding-bottom: 100px;
+    }
+
+    .how-made-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+    
+}
+
 
 /* /HOW MADE */
 
