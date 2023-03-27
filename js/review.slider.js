@@ -6,7 +6,7 @@
 //     });
 // });
 
-$('.slider-wrap').slick({
+$('.reviews-slider-wrap').slick({
   dots: true,
   arrows: false,
   infinite: true,

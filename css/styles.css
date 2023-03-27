@@ -1035,8 +1035,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 }
 
 .products-title-accent {
-    color: #FD9222;
-    margin-bottom: 32px;
+    color: #FD9222;    
 }
 
 .product-card {
@@ -1047,6 +1046,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     border-radius: 15px;
     text-align: center;
     padding: 32px 52px 32px 53px;
+    margin-bottom: 13px;
 }
 
 .product-photo {
@@ -1072,10 +1072,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     margin-bottom: 18px;
 }
 
-.product-price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product-price {    
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -1085,8 +1082,64 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     background: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
+    padding: 8px 19px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.slick-dots {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.slick-dots li button {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(17, 17, 17, 0.1);
+    border-radius: 50%;
+
+}
+
+.slick-dots li button::before {
+    display: none;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #FD9222;
+    width: 28px;
+    height: 13px;
+    border-radius: 10px;
+
+}
+
+.slick-dots li {
+    margin: 0 7px;
+    width: auto;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .products {
+        padding-bottom: 100px;
+    }
+
+    .products-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+
+    .product-card {
+        width: 270px;
+        padding: 32px 20px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .products {
+        padding-bottom: 128px;
+    }    
 }
 
 
@@ -1180,36 +1233,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     color: #FFFFFF;
 }
 
-.slick-dots {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
-.slick-dots li button {
-    width: 13px;
-    height: 13px;
-    background-color: rgba(17, 17, 17, 0.1);
-    border-radius: 50%;
-    
-}
-
-.slick-dots li button::before {
-    display: none;
-}
-
-.slick-dots li.slick-active button {
-    background-color: #FD9222;
-    width: 28px;
-    height: 13px;
-    border-radius: 10px;
-    
-}
-
-.slick-dots li {
-    margin: 0 7px;
-    width: auto;
-    height: auto;
-}
 @media screen and (min-width: 375px) {
     .reviews-wrap {
         width: 335px;
