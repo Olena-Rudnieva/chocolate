@@ -1146,6 +1146,10 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
 /* SELLERS */
 
+.sellers-container {
+    text-align: center;
+}
+
 .sellers-title {
     font-weight: 600;
     font-size: 20px;
@@ -1164,18 +1168,20 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 .sellers-img {
     width: 335px;
     height: 464px;
-    border-radius: 15px;
+    border-radius: 15px; 
     margin-bottom: 20px;
 }
 
+
 .sellers-text {
+    text-align: start;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: #111111;
+    margin-bottom: 32px;
 }
-
 
 /* /SELLERS */
 
