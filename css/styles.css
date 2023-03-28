@@ -1183,13 +1183,54 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     margin-bottom: 32px;
 }
 
+
+@media screen and (min-width: 768px) {
+    
+    .sellers-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        row-gap: 32px;
+        justify-content: space-between;
+        align-items: start;
+    }
+  
+    .sellers-title {
+        font-size: 24px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }  
+
+    .sellers-img {
+        width: 344px;         
+        margin-bottom: 0;
+    }
+
+    .first-img {
+        order: 1;
+        
+    }
+
+    .sellers-text {
+        width: 306px;
+        margin-bottom: 0;
+        order: 3;
+    }
+
+    .second-img {
+        order: 2;
+    }
+
+    .sellers-btn {
+        order: 4;
+        font-size: 18px;
+        line-height: 1.22;
+        padding: 14px 40px;
+    }
+}
 /* /SELLERS */
 
-
-
 /* REVIEWS */
-
-
 
 .reviews {
     padding-top: 72px;
