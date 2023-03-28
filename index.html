@@ -252,13 +252,14 @@
           
         <div class="how-made-wrap">
             <div class="how-made-video">
-                <!-- <iframe class="how-made-video-iframe" src="https://www.youtube.com/embed/SdE0Y_StFj8"
-                 title="YouTube video player"
-                 frameborder="0"
-                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                 allowfullscreen> -->
-                <iframe class="how-made-video-iframe" src="https://www.youtube.com/embed/mYWMcWv9KD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </iframe>
+                <iframe
+                 class="how-made-video-iframe" 
+                 src="https://www.youtube.com/embed/mYWMcWv9KD8" 
+                 title="YouTube video player" 
+                 frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 allowfullscreen>
+                </iframe>                
             </div>  
             
             
@@ -352,10 +353,7 @@
                     <p class="product-text">White chocolate</p>
                     <p class="product-price">54 UAH</p>
                 </div>
-            </div>
-
-
-            
+            </div>          
  
         </div>
     </div>
@@ -365,9 +363,16 @@
 
 <section class="sellers" id="sellers">
     <div class="container">
-        <h2>TOP SELLERS</h2>
-        <img src="" alt="">
-        <p>Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+        <h2 class="sellers-title"><span class="sellers-title-accent">TOP</span> SELLERS</h2>
+        <picture>
+            <!-- <source media="(min-width: 1200px)" srcset="./images/projects/desktop/desktop-project8.jpg 1x, ./images/projects/desktop/desktop-project8@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./images/projects/tablet/tablet-project8.jpg 1x, ./images/projects/tablet/tablet-project8@2x.jpg 2x"> -->
+            <source media="(min-width: 320px)" srcset="./images/sellers/mobile-seller1.jpg 1x, ./images/sellers/mobile-seller1@2x.jpg 2x">
+            <img class="sellers-img" 
+              src="./images/sellers/mobile-seller1.jpg" 
+              alt="Photo of Top Sellers">
+        </picture>
+        <p class="sellers-text">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
         <img src="" alt="">
         <button class="btn" type="button">
             Buy now
