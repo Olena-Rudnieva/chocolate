@@ -1172,6 +1172,10 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     margin-bottom: 20px;
 }
 
+.third-img {
+    display: none;
+}
+
 
 .sellers-text {
     text-align: start;
@@ -1227,6 +1231,23 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         line-height: 1.22;
         padding: 14px 40px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .sellers-img {
+        width: 368px;
+    }
+    
+    .third-img {
+        display: block;
+    }
+
+    .sellers-text {
+        width: 407px;
+    }
+
+    
 }
 /* /SELLERS */
 
