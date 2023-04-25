@@ -1463,8 +1463,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .subscribe {
-    margin-top: 72px;
-    margin-bottom: 72px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: url(../images/subscribe/tablet-subcribe.jpg);
   }
 
@@ -1514,6 +1514,11 @@ body {
   padding-bottom: 32px;
 }
 
+.footer-decor-wrap {
+  position: relative;
+  margin-bottom: 64px;
+}
+
 .footer-title {
   font-weight: 500;
   font-size: 24px;
@@ -1529,9 +1534,9 @@ body {
 }
 
 .footer-contact-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
 }
 
 .footer-subtitle {
@@ -1551,14 +1556,64 @@ body {
   color: #ffffff;
 }
 
+.decor-item::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 32px);
+}
+
 .footer-nav-link {
-    font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-display: flex;
-align-items: center;
-letter-spacing: -0.02em;
-color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.footer-nav-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-decor-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 74px;
+  }
+
+  .footer-title {
+    font-size: 28px;
+    line-height: 1.21;
+  }
+
+  .footer-contact-wrap {
+    justify-content: start;    
+  }
+
+  .footer-subtitle {
+    margin-right: 137px;
+  }
+
+  .footer-nav-list {
+    display: flex;
+  }
+
+  .footer-nav-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
 }
 
 /* /FOOTER */
