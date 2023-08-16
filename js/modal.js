@@ -36,10 +36,17 @@ const btnOn = document.querySelector('.scroll-on');
 const body = document.body;
 
 function desableScroll() {
+  let pagePosition = window.scrollY;
   body.classList.add('desable-scroll');
+  body.dataset.position = pagePosition;
+  body.style.top = -pagePosition + 'px';
 }
 function enableScroll() {
+  let pagePosition = parseInt(body.dataset.position, 10);
   body.classList.remove('desable-scroll');
+  body.style.top = 'auto';
+  window.scroll({ top: pagePosition, left: 0 });
+  body.removeAttribute('data - position');
 }
 
 console.log(btnOff);

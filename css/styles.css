@@ -83,6 +83,7 @@ button {
 }
 
 body {
+  position: relative;
   font-family: var(--primary-font);
   background-color: #fafafa;
 }
@@ -96,10 +97,10 @@ textarea {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  /* position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; */
+  width: 100%;
 }
 
 .container {
