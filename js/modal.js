@@ -13,23 +13,40 @@
   }
 })();
 
+// Modal Buy now. Form data collection
+
 // (() => {
-//   const form = document.querySelector('.form');
+//   const form = document.querySelector('.modal-form');
 
 //   form.addEventListener('submit', handleSubmit);
 
 //   function handleSubmit(event) {
 //     event.preventDefault();
 //     const {
-//       elements: { login, password },
+//       elements: {
+//         userName,
+//         userSurname,
+//         userEmail,
+//         userPhone,
+//         userCard,
+//         userMessage,
+//       },
 //     } = event.currentTarget;
 
-//     console.log(`Login: ${login.value}, Password: ${password.value}`);
+//     console.log(`Name: ${userName.value}`);
+//     console.log(`Surname: ${userSurname.value}`);
+//     console.log(`Email: ${userEmail.value}`);
+//     console.log(`Phone number: ${userPhone.value}`);
+//     console.log(`Card number: ${userCard.value}`);
+//     console.log(`Comment: ${userMessage.value}`);
+
 //     event.currentTarget.reset();
 //     const backdrop = document.querySelector('.backdrop');
 //     backdrop.classList.toggle('is-hidden');
 //   }
 // })();
+
+// Prevent page scrolling when a modal is open
 
 const btnOff = document.querySelector('.scroll-off');
 const btnOn = document.querySelector('.scroll-on');
@@ -41,6 +58,7 @@ function desableScroll() {
   body.dataset.position = pagePosition;
   body.style.top = -pagePosition + 'px';
 }
+
 function enableScroll() {
   let pagePosition = parseInt(body.dataset.position, 10);
   body.classList.remove('desable-scroll');
@@ -49,11 +67,7 @@ function enableScroll() {
   body.removeAttribute('data - position');
 }
 
-console.log(btnOff);
-
 btnOff.addEventListener('click', () => {
-  console.log('1');
-
   desableScroll();
 });
 
