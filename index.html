@@ -9,8 +9,8 @@
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" rel="stylesheet">
-    <!-- <link href="./css/slick.css" rel="stylesheet">
-    <link href="./css/slick-theme.css" rel="stylesheet"> -->
+    <link href="./css/slick.css" rel="stylesheet">
+    <link href="./css/slick-theme.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
 
 </head>
@@ -522,26 +522,25 @@
         <h2 class="modal-buy-now-title">
             Buy<span class="modal-buy-now-title-accent">&nbsp;now</span>
         </h2>
-         <ul class="modal-buy-now-cards-list list">
-            <li class="modal-buy-now-card-item ">
-                <a class="modal-buy-now-card-link link" href>
-                    <img src="./images/buy-now/buy-now-desktop-1-min.png" alt="chocolate" srcset="./images/buy-now/buy-now-desktop-1@2x-min.png" width="120" height="107">
-                </a>
-                <p class="modal-buy-now-card-weight">100g</p>
-            </li>
-            <!-- <li class="modal-buy-now-card-item ">
-                <a class="modal-buy-now-card-link link" href>
-                <img src="./images/buy-now/buy-now-desktop-2-min.png" alt="chocolate" srcset="./images/buy-now/buy-now-desktop-2@2x-min.png" width="120" height="107">
-                </a>
-                <p class="modal-buy-now-card-weight">200g</p>
-            </li>
-            <li class="modal-buy-now-card-item ">
-                <a class="modal-buy-now-card-link link" href>
-                <img src="./images/buy-now/buy-now-desktop-3-min.png" alt="chocolate" srcset="./images/buy-now/buy-now-desktop-3@2x-min.png" width="120" height="107">
-                </a>
-                <p class="modal-buy-now-card-weight">300g</p>
-            </li> -->
-       </ul>
+       <div class="modal-buy-now-cards-list buy-now-slider">
+        <div class="modal-buy-now-card-item ">
+            <a class="modal-buy-now-card-link link" href>
+                <img class="modal-buy-now-card-img" src="./images/buy-now/buy-now-desktop-1-min.png" alt="chocolate" srcset="./images/buy-now/buy-now-desktop-1@2x-min.png" width="120" height="107">
+            </a>
+            <p class="modal-buy-now-card-weight">100g</p>
+        </div>
+        <div class="modal-buy-now-card-item ">
+            <a class="modal-buy-now-card-link link" href>
+                <img class="modal-buy-now-card-img" src="./images/buy-now/buy-now-desktop-2-min.png" alt="chocolate" srcset="./images/buy-now/buy-now-desktop-2@2x-min.png" width="120" height="107">
+            </a>
+            <p class="modal-buy-now-card-weight">200g</p>
+        </div>
+        <div class="modal-buy-now-card-item ">
+            <a class="modal-buy-now-card-link link" href>
+              <img class="modal-buy-now-card-img" src="./images/buy-now/buy-now-desktop-3-min.png" alt="chocolate" srcset="./images/buy-now/buy-now-desktop-3@2x-min.png" width="120" height="107">
+            </a>
+            <p class="modal-buy-now-card-weight">300g</p></div>
+       </div>
        <form class="modal-buy-now-form modal-form">
       <div class="modal-form-field">
         <span class="modal-by-now-form-input-desc">Personal information</span>
@@ -748,11 +747,13 @@
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="./js/mobile-menu.js"></script> 
   <script src="./js/modal.js"></script>
-  <!-- <script src="./js/slick.min.js"></script> -->
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/buy-now.slider.js"></script>
   <script src="./js/products-slider.js"></script>
   <script src="./js/review.slider.js"></script>
+
 </body>
 </html>
