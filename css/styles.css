@@ -441,6 +441,7 @@ textarea {
 }
 
 .hero-wrap {
+  width: 100%;
   padding: 395px 20px 20px 20px;
   background-image: url(../images/hero/mobile-hero-bg.jpg);
   background-size: cover;
@@ -538,6 +539,7 @@ textarea {
   }
 
   .hero-wrap {
+    max-width: 1136px;
     padding: 671px 40px 40px 40px;
     background-image: url(../images/hero/tablet-hero-bg.jpg);
   }
@@ -2005,21 +2007,18 @@ textarea {
 
   .modal-buy-now-cards-list {
     display: flex;
+    flex-direction: row;
     gap: 16px;
     margin-bottom: 40px;
     margin-left: 0;
     margin-right: 0;
   }
 
-  /* .modal-buy-now-card-item {
+  .modal-buy-now-card-item {
     width: 160px;
     height: 196px;
-    padding-top: 24px;
-    padding-bottom: 18px;
-  } */
-
-  .modal-buy-now-card-item:not(:last-child) {
-    margin-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 28px;
   }
 
   .modal-buy-now-card-img {
@@ -2027,6 +2026,12 @@ textarea {
     height: 107px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .modal-buy-now-card-weight {
+    margin-top: 14px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
   .modal-by-now-form-input-desc {
